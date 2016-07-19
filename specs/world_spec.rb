@@ -9,7 +9,7 @@ class TestWorld < Minitest::Test
   end
 
   def test_world_has_size
-    
+    assert_equal(10, @kanto.map_size)
   end
 
 

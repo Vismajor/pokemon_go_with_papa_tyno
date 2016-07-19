@@ -12,5 +12,21 @@ class TestPokemon < Minitest::Test
     assert_equal("Pikachu", @pikachu.name)
   end
 
+  def test_pokemon_has_type
+
+  end
+
+  def test_pokemon_has_level
+
+  end
+
+  def test_pokemon_has_position
+
+  end
+
+  def test_pokemon_has_scare
+
+  end
+
 
 end

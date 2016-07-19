@@ -17,7 +17,7 @@ class TestTrainer < Minitest::Test
   end
 
   def test_trainer_has_position
-
+    assert_equal(0, @red.position)
   end
 
   def test_trainer_has_balls

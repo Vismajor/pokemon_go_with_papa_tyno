@@ -8,5 +8,9 @@ class TestTrainer < Minitest::Test
     @red = Trainer.new({})
   end
 
+  def test_trainer_has_name
+
+  end
+
 
 end

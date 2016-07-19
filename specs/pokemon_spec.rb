@@ -4,5 +4,13 @@ require_relative('../models/pokemon')
 
 class TestPokemon < Minitest::Test
 
+  def setup
+    @pikachu = Pokemon.new("Pikachu")
+  end
+
+  def test_pokemon_has_name
+    assert_equal("Pikachu", @pikachu.name)
+  end 
+
 
 end

@@ -14,5 +14,6 @@ class PositionGenerator
     until @world.map[position] == nil
       position = @randomizer.rand(1..9)
     end
+    return position
   end
 end

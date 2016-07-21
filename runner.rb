@@ -7,6 +7,9 @@ require "pry-byebug"
 
 @kanto = World.new
 @position_generator = PositionGenerator.new(@kanto)
+@pikachu = Pokemon.new({"name" => "Pikachu"}, @position_generator)
+@kanto.update
+@charmander = Pokemon.new({"name" => "Charmander"}, @position_generator)
 
 binding.pry
 

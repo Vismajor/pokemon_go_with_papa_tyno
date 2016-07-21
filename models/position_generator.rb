@@ -10,10 +10,11 @@ class PositionGenerator
 
   def generate_position()
    position = 0
-   binding.pry
-    until @world.map[position] == nil
+    until @world.map[position] == nil && position != 0
       position = @randomizer.rand(1..9)
     end
+    
     return position
   end
+
 end

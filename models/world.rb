@@ -10,5 +10,9 @@ class World
     return @map.length
   end
 
+  def update
+    @map 
+  end
+
 
 end

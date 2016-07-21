@@ -11,7 +11,7 @@ class PositionGenerator
   def generate_position()
    position = 0
     until @world.map[position] == nil && position != 0
-      position = @randomizer.rand(1..9)
+      position = @randomizer.rand(1..@world.map.length)
     end
     
     return position

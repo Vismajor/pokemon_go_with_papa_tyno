@@ -2,17 +2,18 @@ class World
 
   attr_reader :map
 
-  def initialize
-    @map = Array.new(10)
+  def initialize(size)
+    @map = Array.new(size)
   end
 
   def map_size
     return @map.length
   end
 
-  def update
-    @map 
+  def update_map(position, name)
+    @map[position] = "#{name}"
   end
+
 
 
 end

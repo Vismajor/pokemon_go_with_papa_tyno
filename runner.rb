@@ -5,11 +5,14 @@ require_relative "models/world"
 
 require "pry-byebug"
 
-@kanto = World.new
+map_size = 20
+@kanto = World.new(map_size)
 @position_generator = PositionGenerator.new(@kanto)
-@pikachu = Pokemon.new({"name" => "Pikachu"}, @position_generator)
-@kanto.update
-@charmander = Pokemon.new({"name" => "Charmander"}, @position_generator)
+@pikachu = Pokemon.new({"name" => "Pikachu"}, @position_generator, @kanto)
+binding.pry
+@charmander = Pokemon.new({"name" => "Charmander"}, @position_generator, @kanto)
+
+
 
 binding.pry
 

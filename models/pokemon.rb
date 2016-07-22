@@ -1,19 +1,17 @@
 class Pokemon
 
-  attr_reader(:name, :type, :level, :position, :scare)
+  attr_reader(:name, :type, :level)
+  attr_accessor(:position, :scare)
 
-  def initialize(options, generator, world)  
-    @name = options["name"]
+  def initialize(name)  
+    @name = name
     # @type = options["type"]
     # @level = options["level"]
-    @position = generator.generate_position
-    # @scare = options["scare"]
-    update_map_with_new_pokemon(world)
+    @position = nil
+    @scare = nil
   end
 
-  def update_map_with_new_pokemon(world)
-    world.update_map(@position, @name)
-  end
+
 
 
 end
